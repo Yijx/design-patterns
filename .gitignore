@@ -1,0 +1,12 @@
+node_modules/
+dist/
+pro-test/
+src/pages/webTest
+.git/
+*.idea/
+*.tar.gz
+*.apk
+*.idea
+*.lock
+npm-debug.log
+yarn-error.logc
