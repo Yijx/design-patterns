@@ -15,6 +15,7 @@ document.getElementById = function () {
 }
 document.getElementById('hello')
 // 利用AOP(面向切面编程) 完成装饰者模式
+/* eslint-disable */
 Function.prototype.before = function (fn) {
   let self = this
   return function () {
@@ -26,6 +27,5 @@ Function.prototype.before = function (fn) {
 document.querySelector = document.querySelector.before(() => console.log('use aop'))
 document.querySelector('#nice')
 
-// 
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 }
-console.log(...z)
+console.log({...z})
